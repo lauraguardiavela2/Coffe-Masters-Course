@@ -87,12 +87,13 @@ ul{
     padding: 0px; 
 }
 .total-info, th, td{
-    width: 100%;
-    text-align: center;
+    margin: auto;
+    width: 40%;
+    /* text-align: center; */
     
     /* Question: how can I reduce the space between columns without padding so that when the page width is reduced the space reduces proportionally?*/
-    padding-left: 100px;
-    padding-right: 100px;
+    /* padding-left: 100px;
+    padding-right: 100px; */
     /* border: 1px solid; */
 }
 .total{
