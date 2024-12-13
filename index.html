@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masters Coffe App Checkout</title>
+
+    <meta name="author" content="Laura GV">
+    <meta name="description" content="This page contains the checkout page for a Masters Coffee App.">
+
+    <link rel="icon" href="coffee_masters_logo.png" type="image/x-icon">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"/> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+    <header>
+        <div class="page-header">
+            <h1 class="title">
+                <img src="coffee_masters_logo.png" alt="Coffee Masters Logo" title="Coffee Masters Logo" class="logo">
+                Coffe Masters
+            </h1>
+        </div>        
+    </header>
+    <main class="page">
+        <section class="order box">
+            <h1 class="title-box">ITEMS</h1>
+            <ul class="items">
+                <li class="item">
+                    <div class="quantity">1x</div>
+                    <div class="product">Cappuccino</div>
+                    <ul class="details">
+                        <li>Lite foam</li>
+                    </ul>
+                    <div class="price">$3.35</div>    
+                </li>
+                <li class="item">
+                    <div class="quantity">1x</div>
+                    <div class="product">Cappuccino</div>
+                    <ul class="details">
+                        <li>Lite milk</li>
+                        <li>Double espresso</li>
+                    </ul>
+                    <div class="price">$3.85</div>    
+                </li>
+                <li class="item">
+                    <div class="quantity">1x</div>
+                    <div class="product">Croissant</div>
+                    <ul class="details">
+                        <li>Butter</li>
+                    </ul>
+                    <div class="price">$2.45</div>    
+                </li>
+            </ul>        
+        </section>    
+        <section class="payment-zone">
+            <div class="name box">
+                <h1 class="title-box">NAME</h1>
+                <form action="">
+                    <ul>
+                        <li class="input-group">
+                            <label for="name" class="label-box">Name for order</label>
+                            <input class="input-box" type="text" name="name" id="name" placeholder="Ford Perfect" autocomplete="on" required>    
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="payment box">
+                <h1 class="title-box">PAYMENT</h1>
+                <ul>
+                    <li class="input-group">
+                        <label for="cardNumber" class="label-box">Card number</label>
+                        <input class="input-box" type="text" name="cardNumber" id="cardNumber" placeholder="1234 5678 9012 3456" pattern="[0-9]{16}" autocomplete="on" required>    
+                    </li>
+                    <li class="input-group">
+                        <label for="ccvNumber" class="label-box">CCV Number</label>
+                        <input class="input-box ccv-number" type="text" name="ccvNumber" id="ccvNumber" placeholder="001" autocomplete="on" required>                
+                    </li>
+                </ul>
+            </div>
+        </section>    
+        <section class="total">
+            <table class="total-info">
+                <tr>
+                    <td>Subtotal:</td>
+                    <td>$9.65</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td>$0.82</td>
+                </tr>
+                <tr class="total-price">
+                    <td>Total:</td>
+                    <td>$10.47</td>
+                </tr>
+            </table>
+            <button type="button" class="place-order">Place order</button>
+        </section>    
+    </main>
+</body>
+</html>
